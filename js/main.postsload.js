@@ -16,7 +16,7 @@
         </div>
     </li>
 */
-function postsload(jsonf, count = 10){
+function postsload(jsonf = "/posts/posts.json", count = 10){
     var self = this;
 
     this.init = function(jsonf, count){

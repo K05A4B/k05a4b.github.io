@@ -21,7 +21,7 @@ function imgShow(){
 function readPageLoad(callback){
     var self = this;
     var cback = callback;
-    this.path = "/__posts/";
+    this.path = "/posts/";
     this.id = "markdown-element";
     
     this.load = function(){
