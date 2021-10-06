@@ -23,12 +23,12 @@ function headerload(){
         a.href = url;
         a.innerHTML = title;
         li.appendChild(a);
-        mobile.insertBefore(li, mobile.childNodes[0]);
+        mobile.insertBefore(li, mobile.childNodes[2]);
     }
 
     this.addMobile = function(data){
         var i;
-        for (i = data.length; i > 0; i--){
+        for (i = data.content.length; i > 0; i--){
             this._addMobile(data.content[i - 1].title, data.content[i - 1].url);
         }
     }
@@ -45,7 +45,7 @@ function headerload(){
 
     this.addPC = function(data){
         var i;
-        for (i = 0; i < data.length; i++){
+        for (i = 0; i < data.content.length; i++){
             this._addPC(data.content[i].title, data.content[i].url);
         }
     }
