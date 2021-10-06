@@ -1,0 +1,194 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#cover{
+    width: 100%;
+    height: 100%;
+}
+
+#cover .video-gb-item .video-gb-content{
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
+    color: rgba(255,255,255,0.85);
+}
+
+#cover .video-gb-item{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#cover .video-gb-item video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.main-content-list .main-article-item .main-article-title a{
+    color: #72EDF2;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin: 0;
+    transition: ease-in-out 800ms;
+    -webkit-transition: ease-in-out 800ms;
+    -o-transition: ease-in-out 800ms;
+    -moz-transition: ease-in-out 800ms;
+}
+
+.main-content-list .main-article-item .main-article-title a:hover{
+    color: #5151E5;
+}
+
+.main-content-list .main-article-item .main-article-body{
+    margin: 20px 0px 20px 0px;
+    color: rgba(255, 255, 255, 0.55);
+    /* 隐藏多余字符 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    display: -webkit-box;
+    line-clamp: 4;
+    -moz-line-clamp: 4;
+    -webkit-line-clamp:4;
+    box-orient:vertical;
+    -webkit-box-orient:vertical;
+    -moz-box-orient:vertical;
+}
+
+.main-content-list .main-article-item .main-artivle-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-list .main-article-item .main-artivle-footer a{
+    color: rgba(255, 255, 255, 0.4);
+    transition: ease-in-out 600ms;
+    -webkit-transition: ease-in-out 600ms;
+    -o-transition: ease-in-out 600ms;
+    -moz-transition: ease-in-out 600ms;
+}
+
+.main-content-list .main-article-item .main-artivle-footer a:hover{
+    transform: rotateZ(5deg);
+    -webkit-transform: rotateZ(5deg);
+    -o-transform: rotateZ(5deg);
+    -moz-transform: rotateZ(5deg);
+}
+
+.main-content-list .main-article-item .main-artivle-footer .main-artivle-meta-info span{
+    margin-right: 10px;
+}
+
+.main-content-list .main-article-item .main-artivle-footer .main-artivle-meta-info{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+}
+
+.main-content-list li{
+    border: 1px solid rgba(172, 163, 163, 0.2);
+    padding: 28px 8px 28px 8px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    list-style: none;
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.25);
+    transition: ease-in-out 200ms;
+    -webkit-transition: ease-in-out 200ms;
+    -o-transition: ease-in-out 200ms;
+    -moz-transition: ease-in-out 200ms;
+}
+
+.main-content-list li:hover{
+    transform: rotateY(5deg);
+    -webkit-transform: rotateY(5deg);
+    -o-transform: rotateY(5deg);
+    -moz-transform: rotateY(5deg);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.1);
+}
+
+.main-content-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.main-content{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    margin: 15px;
+    background-color: #232323;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+.con-card{
+    border-radius: 8px;
+    height: 100px;
+}
+
+#partices-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 382px) {
+    #cover .video-gb-item .video-gb-content h1{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #cover .video-gb-item .video-gb-content h1{
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 586px){
+    .main-content-list li{
+        min-width: 560px;
+    }
+}
+
+@media only screen and (min-width: 1069px){
+    .main-content-list li{
+        min-width: 860px;
+    }
+}

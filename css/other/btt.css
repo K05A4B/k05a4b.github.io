@@ -1,0 +1,84 @@
+#backtotop{
+    position: fixed;
+    bottom: 80px;
+    right: 15px;
+    float: right;
+    font-size: 1.4em;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.6);
+    transition: ease-in-out 800ms;
+    -webkit-transition: ease-in-out 800ms;
+}
+
+#backtotop:hover{
+    animation: scale 800ms;
+    -webkit-animation: scale 800ms;
+    -moz-animation: scale 800ms;
+    -o-animation: scale 800ms;
+    color: rgba(255,255,255,0.75);
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes btt-fade-in{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes btt-fade-in{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
+
+@keyframes btt-fade-out{
+    0%{opacity: 1;}
+    25%{opacity: 0.75;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.25;}
+    100%{opacity: 0;}
+}
+
+@-webkit-keyframes btt-fade-out{
+    0%{opacity: 1;}
+    25%{opacity: 0.75;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.25;}
+    100%{opacity: 0;}
+}
+
+.backtotop-fade-in{
+    animation: btt-fade-in 1000ms;
+    -webkit-animation: btt-fade-in 1000ms;
+    -o-animation: btt-fade-in 1000ms;
+    -moz-animation: btt-fade-in 1000ms;
+    transition: ease-in-out 1000ms;
+    -webkit-transition: ease-in-out 1000ms;
+}
+
+.backtotop-fade-out{
+    animation: btt-fade-out 1000ms;
+    -webkit-animation: btt-fade-out 1000ms;
+    -o-animation: btt-fade-out 1000ms;
+    -moz-animation: btt-fade-out 1000ms;
+    transition: ease-in-out 1000ms;
+    -webkit-transition: ease-in-out 1000ms;
+}

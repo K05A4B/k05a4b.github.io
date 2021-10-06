@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>KZ91's Blog</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/plugin.js"></script>
+</head>
+<body>
+    <div id="plugins-style"></div>
+    <header>
+        <div class="header-logo">
+            <a id="logo-link" href="/">
+                <img id="header-logo" src="./img/logo.jpg" alt="">
+                <h1 id="header-text">KZ91</h1>
+            </a>
+        </div>
+        <div class="header-content">
+            <div data-header-type="pc">
+                <ul id="pc-header-ul">
+                    <li>
+                        <a href="/">主页</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-header-type="mobile">
+                <div class="mobile-header">
+                    <span id="moblie-header-button"><i class="fa fa-bars"></i></span>
+                    <ul id="mobile-header-ul" show="false">
+                        <li>
+                            <a href="/">主页</a>
+                        </li>
+                        <li>
+                            <button class="close-menu-button"><i class="fa fa-close"></i>&nbsp;Close</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="cover">
+            <div class="video-gb-item">
+                <div class="video-gb-content">
+                    <h1>Let Programming Change The World</h1>
+                </div>
+                <div id="partices-background"></div>
+                <video src="./other/video/Northernlights2_HD.mp4" width="100%" height="100%" muted autoplay loop></video>
+            </div>
+        </div>
+        <div class="main-content" false.style="height: 800px;">
+            <ul class="main-content-list" id="main-content-list">
+            </ul>
+        </div>
+        <button id="backtotop" style="display: none;" title="返回顶部" class="fa fa-arrow-up"></button>
+    </main>
+    <div id="plugins-script"></div>
+</body>
+<script src="./lib/particles/particles.min.js"></script>
+<script src="./js/header.js"></script>
+<script src="./lib/prism/prism.js"></script>
+<script src="./js/main.postsload.js"></script>
+<script>
+    var load_content = new postsload("./__posts/posts.json");
+    particlesJS.load("partices-background", "./other/particles_config/bg.json");
+
+    // 音乐播放器title填名称id填音乐id(网易云)
+    plugin.use("Mini-Player", function(){
+        player.init([
+            {title:"Neo", id:"18520184"},
+            {title:"Nevada", id:"447281026"},
+            {title:"Run Free (feat. IVIE)", id:"500410102"},
+            {title:"Way Back Home (Sam Feldt Edit)", id:"1334246005"},
+            {title:"Power",id:"1843319489"},
+            {title:"Dancing With Your Ghost", id:"1374329431"},
+            {title:"Remember Our Summer", id:"1384450197"},
+            {title:"Linked", id:"526412160"},
+            {title:"Wild", id:"441491410"}
+        ], false);
+    },function(e){
+        console.log(e);
+    });
+</script>
+</html>

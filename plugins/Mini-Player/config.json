@@ -1,0 +1,8 @@
+{
+    "name": "Mini-Player",
+    "author": "KZ91",
+    "version": "0.8.6",
+    "htmlcode": ["main", "code.html", 0],
+    "scripts": ["index.js"],
+    "styles": ["css/style.css"]
+}

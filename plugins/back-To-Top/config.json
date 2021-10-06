@@ -1,0 +1,8 @@
+{
+    "name": "back-To-Top",
+    "author": "KZ91",
+    "version": "1.0.2",
+    "htmlcode": ["main", "code.html", 0],
+    "scripts": ["btt.js"],
+    "styles": ["btt.css"]
+}
