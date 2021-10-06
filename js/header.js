@@ -29,7 +29,7 @@ function headerload(){
     this.addMobile = function(data){
         var i;
         for (i = data.length; i > 0; i--){
-            this._addMobile(data[i - 1].title, data[i - 1].url);
+            this._addMobile(data.content[i - 1].title, data.content[i - 1].url);
         }
     }
 
@@ -46,7 +46,7 @@ function headerload(){
     this.addPC = function(data){
         var i;
         for (i = 0; i < data.length; i++){
-            this._addPC(data[i].title, data[i].url);
+            this._addPC(data.content[i].title, data.content[i].url);
         }
     }
 
