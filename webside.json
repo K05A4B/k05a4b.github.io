@@ -2,6 +2,7 @@
     "header": {
         "logo": {"url": "/", "text": "KZ91", "logo": "/img/logo.jpg"},
         "content": [
+            {"title":"关于", "url":"/read.html#id=about&title=关于"}
         ]
     },
     "imports":[]
