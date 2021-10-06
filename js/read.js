@@ -29,7 +29,8 @@ function readPageLoad(callback){
         var file = this.path + this.getHash("id") + ".md"
         this.getContent(file, function(data){
             var htmldata = marked(data);
-            document.getElementById(self.id).innerHTML = htmldata;
+            var markdown_element = document.getElementById(self.id)
+            markdown_element.innerHTML = htmldata;
             cback();
         },function(e){
 
@@ -76,6 +77,9 @@ function readPageLoad(callback){
         });
     }
 
+    window.addEventListener("hashchange", function(e){
+        self.load();
+    });
     this.load();
 }
 
